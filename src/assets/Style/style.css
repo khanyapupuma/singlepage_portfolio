@@ -26,6 +26,9 @@
 /* Universal selector */
 
 /* Custom variables */
+ ::-webkit-scrollbar{
+    display: none;
+ }
 
 /* Select all images */
 img{
@@ -36,4 +39,10 @@ img{
 /* Logo */
 img[alt= 'logo']{
     width:5rem;
+}
+
+/* Footer */
+:is(.wrapper){
+    display: grid;
+    grid-template-rows: auto minmax(100dvh, 100%)auto;
 }
